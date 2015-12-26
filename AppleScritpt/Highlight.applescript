@@ -1,4 +1,6 @@
-set old to the clipboard
+try
+	set old to the clipboard as record
+end try
 
 delay 0.5
 
@@ -6,7 +8,9 @@ tell application "System Events" to keystroke "c" using command down
 
 delay 0.5
 
-set input to the clipboard
+try
+	set input to the clipboard as record
+end try
 
 choose from list {"Java", "Javascript", "Python", "Shell"} with prompt "Highlight for?"
 set lang to result as text
@@ -18,4 +22,7 @@ tell application "Evernote" to activate
 tell application "System Events" to keystroke "v" using command down
 
 delay 0.5
-set the clipboard to old
+
+try
+	set the clipboard to old
+end try
