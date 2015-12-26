@@ -14,4 +14,4 @@ Using Keyboard Maestro for shortcut, although you can use OS X's built in functi
 
 Evernote lack of support for code highlight has been a real problem. The idea is to use it's support for RFT to support code highlight.
 
-![Demo]()
+![Demo](http://wanderer-miscellaneous.qiniudn.com/Demo.mov)
